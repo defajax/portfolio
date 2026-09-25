@@ -5,13 +5,13 @@ function App() {
     <div className="portfolio-container">
       {/* Шапка / Hero */}
       <header className="hero">
-        <h1>Привет, я Frontend-разработчик</h1>
-        <p>Создаю современные, интерактивные веб-приложения и интерфейсы.</p>
+        <h1>ПРИВIТ!!</h1>
+        <p>!!!</p>
       </header>
 
       {/* Секция Навыков */}
       <section className="skills-section">
-        <h2>Мои навыки</h2>
+        <h2>Skills :</h2>
         <div className="skills-grid">
           <span className="skill-tag">HTML5</span>
           <span className="skill-tag">CSS3</span>
@@ -24,25 +24,24 @@ function App() {
 
       {/* Секция Проектов */}
       <section className="projects-section">
-        <h2>Мои проекты</h2>
+        <h2>My Projects</h2>
         <div className="project-card">
-          <h3>Генетический определитель цвета глаз</h3>
+          <h3>NONE</h3>
           <p>
-            Интерактивное веб-приложение для расчета вероятности цвета глаз будущего ребенка 
-            на основе генетических данных родителей и прародителей.
+            NULL
           </p>
           <div className="project-tech">
             <span>React</span>
             <span>JavaScript</span>
             <span>CSS</span>
           </div>
-          <span className="project-link">Скоро здесь появится живое демо!</span>
+          <span className="project-link">!WOW!</span>
         </div>
       </section>
 
       {/* Футер */}
       <footer>
-        <p>© 2026 Мое Портфолио. Сделано с помощью React & Vite.</p>
+        <p>© 2026 defajax React & Vite.</p>
       </footer>
     </div>
   );

@@ -25,7 +25,7 @@ body {
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #38bdf8;
+  color: #ffffff;
 }
 
 .hero p {
@@ -40,7 +40,7 @@ section {
 section h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  border-bottom: 2px solid #334155;
+  border-bottom: 2px solid #6b788a;
   padding-bottom: 8px;
 }
 
@@ -51,7 +51,7 @@ section h2 {
 }
 
 .skill-tag {
-  background-color: #1e293b;
+  background-color: #2d384a;
   color: #38bdf8;
   padding: 8px 16px;
   border-radius: 20px;
@@ -69,7 +69,7 @@ section h2 {
 
 .project-card:hover {
   transform: translateY(-4px);
-  border-color: #38bdf8;
+  border-color: #cfe4ed;
 }
 
 .project-card h3 {
@@ -90,7 +90,7 @@ section h2 {
 }
 
 .project-tech span {
-  background-color: #0f172a;
+  background-color: #838383;
   color: #cbd5e1;
   font-size: 0.85rem;
   padding: 4px 10px;
