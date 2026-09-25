@@ -5,7 +5,7 @@ function App() {
     <div className="portfolio-container">
       {/* Шапка / Hero */}
       <header className="hero">
-        <h1>ПРИВIТ!!</h1>
+        <h1>ЗЛАТА ПРИВIТ!!</h1>
         <p>!!!</p>
       </header>
 
