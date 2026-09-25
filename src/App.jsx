@@ -2,47 +2,49 @@ import './App.css';
 
 function App() {
   return (
-    <div className="portfolio-container">
-      {/* Шапка / Hero */}
-      <header className="hero">
-        <h1>ЗЛАТА ПРИВIТ!!</h1>
-        <p>!!!</p>
-      </header>
-
-      {/* Секция Навыков */}
-      <section className="skills-section">
-        <h2>Skills :</h2>
-        <div className="skills-grid">
-          <span className="skill-tag">HTML5</span>
-          <span className="skill-tag">CSS3</span>
-          <span className="skill-tag">JavaScript</span>
-          <span className="skill-tag">React</span>
-          <span className="skill-tag">Git & GitHub</span>
-          <span className="skill-tag">Vite</span>
+    <div className="portfolio-wrapper">
+      <main className="bento-container">
+        {/* Hero Card */}
+        <div className="card hero-card">
+          <span className="badge">Available for hire</span>
+          <h1>Frontend Developer</h1>
+          <p>Building clean, interactive, and user-centric web applications.</p>
         </div>
-      </section>
 
-      {/* Секция Проектов */}
-      <section className="projects-section">
-        <h2>My Projects</h2>
-        <div className="project-card">
-          <h3>NONE</h3>
+        {/* Skills Card */}
+        <div className="card skills-card">
+          <h2>Tech Stack</h2>
+          <div className="skills-list">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Git</span>
+            <span>Vite</span>
+          </div>
+        </div>
+
+        {/* Project Card */}
+        <div className="card project-card">
+          <div className="project-header">
+            <h2>Featured Project</h2>
+            <span className="project-status">In Progress</span>
+          </div>
+          <h3>Eye Color Genetics Predictor</h3>
           <p>
-            NULL
+            An interactive web application predicting a child&apos;s eye color based on 
+            parents&apos; and grandparents&apos; genetics using Mendelian inheritance logic.
           </p>
-          <div className="project-tech">
+          <div className="project-tags">
             <span>React</span>
             <span>JavaScript</span>
-            <span>CSS</span>
+            <span>UI/UX</span>
           </div>
-          <span className="project-link">!WOW!</span>
+          <div className="project-footer">
+            <span className="coming-soon">Live Demo Coming Soon →</span>
+          </div>
         </div>
-      </section>
-
-      {/* Футер */}
-      <footer>
-        <p>© 2026 defajax React & Vite.</p>
-      </footer>
+      </main>
     </div>
   );
 }
