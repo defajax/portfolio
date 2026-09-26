@@ -69,7 +69,7 @@ body {
 
 .nav-item:hover, .nav-item.active {
   background-color: #f1f5f9;
-  color: #1e3a8a;
+  color: #68769e;
 }
 
 .lang-switch {
@@ -114,7 +114,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.04), transparent 40%), #ffffff;
+  background: radial-gradient(circle at top right, rgba(59, 227, 246, 0.04), transparent 40%), #ffffff;
   min-height: 100vh;
 }
 
@@ -138,7 +138,7 @@ body {
 }
 
 .work-btn:hover {
-  background-color: #1e3a8a;
+  background-color: #4b5776;
 }
 
 .hero-section {

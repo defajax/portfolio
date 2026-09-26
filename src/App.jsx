@@ -8,7 +8,7 @@ function App() {
         <div className="profile-section">
           <div className="avatar-placeholder">
             {/* Вместо букв FD вы позже сможете вставить сюда свою фото через тег <img src="..." /> */}
-            <span>FD</span>
+            <span>MU</span>
           </div>
         </div>
 
@@ -25,11 +25,11 @@ function App() {
         </nav>
 
         <div className="lang-switch">
-          <span>EN</span> / <span className="muted">RU</span>
+          <span>EN</span> / <span className="muted">UA</span>
         </div>
 
         <div className="social-links">
-          <a href="https://github.com" target="_blank" rel="noreferrer">GH</a>
+          <a href="https://github.com/defajax" target="_blank" rel="noreferrer">GH</a>
           <a href="https://linkedin.com" target="_blank" rel="noreferrer">IN</a>
           <a href="https://t.me" target="_blank" rel="noreferrer">TG</a>
         </div>
@@ -47,7 +47,7 @@ function App() {
           <div className="hero-text-block">
             <div className="line">
               <span className="num">01</span>
-              <h1>&lt;Hello, I&apos;m <span className="highlight">Frontend</span>!&gt;</h1>
+              <h1>&lt;Hello, I&apos;m <span className="highlight">ayashko</span>!&gt;</h1>
             </div>
             <div className="line">
               <span className="num">02</span>
