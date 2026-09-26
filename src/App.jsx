@@ -2,48 +2,73 @@ import './App.css';
 
 function App() {
   return (
-    <div className="portfolio-wrapper">
-      <main className="bento-container">
-        {/* Hero Card */}
-        <div className="card hero-card">
-          <span className="badge">Available for hire</span>
-          <h1>Frontend Developer</h1>
-          <p>Building clean, interactive, and user-centric web applications.</p>
-        </div>
-
-        {/* Skills Card */}
-        <div className="card skills-card">
-          <h2>Tech Stack</h2>
-          <div className="skills-list">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Git</span>
-            <span>Vite</span>
+    <div className="portfolio-layout">
+      {/* Боковая панель (Sidebar) */}
+      <aside className="sidebar">
+        <div className="profile-section">
+          <div className="avatar-placeholder">
+            {/* Вместо букв FD вы позже сможете вставить сюда свою фото через тег <img src="..." /> */}
+            <span>FD</span>
           </div>
         </div>
 
-        {/* Project Card */}
-        <div className="card project-card">
-          <div className="project-header">
-            <h2>Featured Project</h2>
-            <span className="project-status">In Progress</span>
+        <nav className="nav-menu">
+          <a href="#home" className="nav-item active">
+            <span className="icon">🏠</span> Home
+          </a>
+          <a href="#projects" className="nav-item">
+            <span className="icon">📂</span> Projects
+          </a>
+          <a href="#about" className="nav-item">
+            <span className="icon">👤</span> About Me
+          </a>
+        </nav>
+
+        <div className="lang-switch">
+          <span>EN</span> / <span className="muted">RU</span>
+        </div>
+
+        <div className="social-links">
+          <a href="https://github.com" target="_blank" rel="noreferrer">GH</a>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer">IN</a>
+          <a href="https://t.me" target="_blank" rel="noreferrer">TG</a>
+        </div>
+      </aside>
+
+      {/* Основной контент */}
+      <main className="main-content">
+        <header className="top-bar">
+          <a href="#contact" className="work-btn">
+            Work with me <span>→</span>
+          </a>
+        </header>
+
+        <section className="hero-section">
+          <div className="hero-text-block">
+            <div className="line">
+              <span className="num">01</span>
+              <h1>&lt;Hello, I&apos;m <span className="highlight">Frontend</span>!&gt;</h1>
+            </div>
+            <div className="line">
+              <span className="num">02</span>
+              <h2>&lt;I design and <span className="highlight">develop</span> apps.&gt;</h2>
+            </div>
+            <div className="line">
+              <span className="num">03</span>
+              <h3>interactive web sites.&gt;</h3>
+            </div>
           </div>
-          <h3>Eye Color Genetics Predictor</h3>
-          <p>
-            An interactive web application predicting a child&apos;s eye color based on 
-            parents&apos; and grandparents&apos; genetics using Mendelian inheritance logic.
+
+          <p className="hero-subtitle">
+            I also build unique tools, including genetic web calculators and modern UI interfaces.
           </p>
-          <div className="project-tags">
-            <span>React</span>
-            <span>JavaScript</span>
-            <span>UI/UX</span>
+
+          <div className="scroll-down">
+            <a href="#projects" className="learn-more-btn">
+              Learn more <span>↓</span>
+            </a>
           </div>
-          <div className="project-footer">
-            <span className="coming-soon">Live Demo Coming Soon →</span>
-          </div>
-        </div>
+        </section>
       </main>
     </div>
   );

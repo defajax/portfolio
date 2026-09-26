@@ -5,154 +5,219 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #09090b;
-  color: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
+  color: #0f172a;
+}
+
+.portfolio-layout {
+  display: flex;
   min-height: 100vh;
+}
+
+/* Стили боковой панели */
+.sidebar {
+  width: 280px;
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 30px;
+  position: fixed;
+  height: 100vh;
+}
+
+.profile-section {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
+}
+
+.avatar-placeholder {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
 }
 
-.portfolio-wrapper {
-  width: 100%;
-  max-width: 900px;
-  padding: 40px 20px;
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
 }
 
-.bento-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+  background-color: #f1f5f9;
+  color: #1e3a8a;
+}
+
+.lang-switch {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+
+.lang-switch .muted {
+  color: #94a3b8;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  text-decoration: none;
+  background-color: #f1f5f9;
+  color: #334155;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.social-links a:hover {
+  background-color: #e2e8f0;
+}
+
+/* Стили основного контента */
+.main-content {
+  margin-left: 280px;
+  flex-grow: 1;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.04), transparent 40%), #ffffff;
+  min-height: 100vh;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.work-btn {
+  background-color: #050505;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.work-btn:hover {
+  background-color: #1e3a8a;
+}
+
+.hero-section {
+  margin: auto 0;
+  padding: 40px 0;
+}
+
+.hero-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
   gap: 20px;
 }
 
-.card {
-  background-color: #121215;
-  border: 1px solid #27272a;
-  border-radius: 20px;
-  padding: 30px;
-  transition: border-color 0.3s ease, transform 0.3s ease;
-}
-
-.card:hover {
-  border-color: #3f3f46;
-}
-
-.hero-card {
-  grid-column: span 2;
-  background: linear-gradient(135deg, #121215 0%, #181824 100%);
-}
-
-.badge {
-  display: inline-block;
-  background-color: rgba(34, 197, 94, 0.1);
-  color: #22c55e;
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 20px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.hero-card h1 {
-  font-size: 2.4rem;
-  margin-bottom: 10px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-}
-
-.hero-card p {
-  color: #a1a1aa;
+.num {
   font-size: 1.1rem;
-}
-
-.skills-card h2, .project-card h2 {
-  font-size: 0.85rem;
-  color: #71717a;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.skills-list span {
-  background-color: #18181b;
-  color: #e4e4e7;
-  padding: 8px 14px;
-  border-radius: 10px;
-  font-size: 0.9rem;
-  border: 1px solid #27272a;
-}
-
-.project-card {
-  grid-column: span 2;
-}
-
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.project-header h2 {
-  margin-bottom: 0;
-}
-
-.project-status {
-  font-size: 0.75rem;
-  color: #f59e0b;
-  background-color: rgba(245, 158, 11, 0.1);
-  padding: 4px 8px;
-  border-radius: 6px;
+  color: #94a3b8;
   font-weight: 600;
+  font-family: monospace;
 }
 
-.project-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #ffffff;
+.hero-text-block h1, 
+.hero-text-block h2, 
+.hero-text-block h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.03em;
 }
 
-.project-card p {
-  color: #a1a1aa;
-  margin-bottom: 20px;
-  line-height: 1.5;
+.highlight {
+  color: #2563eb;
 }
 
-.project-tags {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 20px;
+.hero-subtitle {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+  max-width: 600px;
 }
 
-.project-tags span {
-  background-color: #18181b;
-  color: #a1a1aa;
-  font-size: 0.8rem;
-  padding: 4px 10px;
-  border-radius: 6px;
+.learn-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s;
 }
 
-.coming-soon {
-  color: #38bdf8;
-  font-size: 0.9rem;
-  font-weight: 500;
+.learn-more-btn:hover {
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
-  .bento-container {
-    grid-template-columns: 1fr;
+/* Адаптивность для мобильных устройств */
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
   }
-  .hero-card, .project-card {
-    grid-column: span 1;
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .hero-text-block h1, 
+  .hero-text-block h2, 
+  .hero-text-block h3 {
+    font-size: 1.8rem;
   }
 }
