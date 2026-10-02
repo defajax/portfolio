@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_4" data-name="Слой 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент_11);
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_11" data-name="Безымянный градиент 11" x1="204.38" y1="90.88" x2="198.77" y2="391.13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M240.38,178.66c31.89-14.93,54-47.29,54-84.83C294.38,42.12,252.46.2,200.75.2s-93.63,41.92-93.63,93.63c0,37.32,21.84,69.53,53.43,84.58-64.85,17.37-112.61,76.54-112.61,146.88,0,83.98,62.83,74.16,146.81,74.16s157.3,9.82,157.3-74.16c0-69.99-47.3-128.93-111.67-146.62Z"/>
+</svg>
