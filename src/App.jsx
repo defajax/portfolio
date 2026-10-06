@@ -148,7 +148,7 @@ function App() {
           <div className="bento-grid">
             {/* Project Card */}
             <a 
-              href="https://defajax.github.io/json-to-ahk" 
+              href="https://defajax.github.io/JSON-to-AHK/" 
               target="_blank" 
               rel="noreferrer" 
               className="bento-card project-card"
