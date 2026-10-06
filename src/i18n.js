@@ -22,12 +22,22 @@ const resources = {
       },
       projects: {
         title: "Projects",
-        eyeColor: {
-        title: "Eye Color Calculator",
-        desc: "A web application tool to calculate a child's eye color based on genetic inputs from parents and grandparents."
-  }
-  
-}
+        jsontoahk: {
+          title: "JSON-to-AHK Converter",
+          desc: "A web application tool to convert JSON data to AutoHotkey scripts."
+        }
+      },
+      about: {
+        title: "About Me",
+        education: "Education: National University 'Odesa Polytechnic'",
+        background: "I have a higher technological education and a strong foundation in analytics and information structuring. My main focus is currently Front-end development. Ready to learn new things and expand my stack :)",
+        stackTitle: "Tech Stack:",
+        skillsTitle: "Soft & Hard Skills:",
+        skillsText: "Advanced data analysis, information structuring (registries, databases), routine automation, attention to detail.",
+        hobbiesTitle: "Hobbies:",
+        hobbiesText: "A strong passion for OSINT for the soul (legal stalking and investigations...), 2D illustrations, and graphic design.",
+        openTo: "Open to job offers for Junior Front-end Developer and OSINT Analyst positions."
+      }
     }
   },
   ua: {
@@ -50,11 +60,22 @@ const resources = {
       },
       projects: {
         title: "Проєкти",
-        eyeColor: {
-        title: "Калькулятор кольору очей",
-        desc: "Веб-додаток для розрахунку кольору очей дитини на основі генетичних даних батьків та прабатьків."
-  }
-}
+        jsontoahk: {
+          title: "JSON-to-AHK Converter",
+          desc: "Веб-додаток для конвертації JSON даних у скрипти AutoHotkey."
+        }
+      },
+      about: {
+        title: "Про мене",
+        education: "Освіта: Національний університет «Одеська політехніка»",
+        background: "Маю вищу технологічну освіту та фундамент в аналітиці, структуризації інформації. Зараз мій головний фокус — Front-end розробка. Готова навчатися новому та збільшувати стек :)",
+        stackTitle: "Стек:",
+        skillsTitle: "Soft & Hard скіли:",
+        skillsText: "Просунутий аналіз даних, структуризація інформації (реєстри, бази даних), автоматизація рутини, увага до деталей.",
+        hobbiesTitle: "Хобі:",
+        hobbiesText: "Маю нестримну пристрасть до OSINT для душі (легальний сталкінг і розслідування...), 2D-ілюстрації та графічного дизайну.",
+        openTo: "Відкрита до пропозицій на позицію Junior Front-end Developer та OSINT-аналітика."
+      }
     }
   }
 };

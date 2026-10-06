@@ -9,30 +9,36 @@ function App() {
 
   const { t, i18n } = useTranslation(); // Language-change initialization
 
-// 1. Active-session (default - 'home')
+// Active-session (default - 'home')
   const [activeSection, setActiveSection] = useState('home');
 
-  // 2. Scroll event listener to update active section based on scroll position
+// Scroll event listener to update active section based on scroll position
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          // Active section is updated when at least 40% of the section is visible
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      // 40% of the section must be visible to consider it active
-      { threshold: 0.4 } 
-    );
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollPosition = window.scrollY + 200; // Small offset from the top of the screen
 
-    // Select all sections with an id and observe them
-    const sections = document.querySelectorAll('section[id]');
-    sections.forEach((section) => observer.observe(section));
+      // 1. If scroll reaches the bottom (about)
+      if (window.innerHeight + Math.round(window.scrollY) >= document.documentElement.scrollHeight - 10) {
+        setActiveSection('about');
+        return;
+      }
 
-    // Cleanup on unmount
-    return () => observer.disconnect();
+      // 2. In other cases, determine the section based on its position on the screen
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          setActiveSection(section.id);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Run immediately on page load
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
   // Function for changing the language
@@ -95,8 +101,8 @@ function App() {
 
         <div className="social-links">
           <a href="https://github.com/defajax" target="_blank" rel="noreferrer">GH</a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">IN</a>
-          <a href="https://t.me" target="_blank" rel="noreferrer">TG</a>
+          <a href="https://www.linkedin.com/in/marharyta-urbanovych-19b138440/" target="_blank" rel="noreferrer">IN</a>
+          <a href="https://t.me/uthernfornia" target="_blank" rel="noreferrer">TG</a>
         </div>
       </aside>
 
@@ -142,18 +148,53 @@ function App() {
           <div className="bento-grid">
             {/* Project Card */}
             <a 
-              href="https://defajax.github.io/eye-color-calc" 
+              href="https://defajax.github.io/json-to-ahk" 
               target="_blank" 
               rel="noreferrer" 
               className="bento-card project-card"
             >
               <div className="card-content">
-                <h3>{t('projects.eyeColor.title')}</h3>
-                <p>{t('projects.eyeColor.desc')}</p>
+                <h3>{t('projects.jsontoahk.title')}</h3>
+                <p>{t('projects.jsontoahk.desc')}</p>
               </div>
               <div className="card-arrow">↗</div>
             </a>            
-            {/* In the future, other cards (bento-card) can be added here */}
+          </div>
+        </section>
+        {/* About Me Section */}
+        <section id="about" className="about-section">
+          <h2 className="section-title">&lt;{t('about.title')} /&gt;</h2>
+          
+          <div className="bento-card about-card-block">
+            <div className="about-content">
+              <p className="about-education"><strong>{t('about.education')}</strong></p>
+              <p className="about-text">{t('about.background')}</p>
+
+              <div className="about-group">
+                <h3>{t('about.stackTitle')}</h3>
+                <div className="skills-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>Vite</span>
+                  <span>Git</span>
+                  <span>Node.js</span>
+                </div>
+              </div>
+
+              <div className="about-group">
+                <h3>{t('about.skillsTitle')}</h3>
+                <p className="about-text">{t('about.skillsText')}</p>
+              </div>
+
+              <div className="about-group">
+                <h3>{t('about.hobbiesTitle')}</h3>
+                <p className="about-text">{t('about.hobbiesText')}</p>
+              </div>
+
+              <p className="about-open"><strong>{t('about.openTo')}</strong></p>
+            </div>
           </div>
         </section>
       </main>
