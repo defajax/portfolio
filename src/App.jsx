@@ -109,7 +109,7 @@ function App() {
       {/* Main Content */}
       <main className="main-content">
         <header className="top-bar">
-          <a href="#contact" className="work-btn">
+          <a href="https://www.linkedin.com/in/marharyta-urbanovych-19b138440/" className="work-btn">
             {t('hero.work')} <span>→</span>
           </a>
         </header>
@@ -173,6 +173,7 @@ function App() {
               <div className="about-group">
                 <h3>{t('about.stackTitle')}</h3>
                 <div className="skills-tags">
+                  <span>Python</span>
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JavaScript</span>

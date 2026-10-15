@@ -283,7 +283,7 @@ body {
 .about-card-block {
   display: block;
   cursor: default;
-  text-align: left; /* Вирівнювання всього блоку по лівому краю */
+  text-align: left; /* Align text to the left */
 }
 
 .about-card-block:hover {
@@ -296,7 +296,7 @@ body {
   flex-direction: column;
   gap: 16px;
   width: 100%;
-  text-align: left; /* Примусове вирівнювання тексту за лівим краєм */
+  text-align: left; /* Align text to the left */
 }
 
 .about-education {
@@ -316,22 +316,22 @@ body {
   color: #1e293b;
 }
 
-/* Стилі для тегів стека, щоб вони не зливалися */
+/* Tags styles */
 .skills-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px; /* Відступи між технологіями */
+  gap: 8px; /* Spacing between technologies */
   margin-top: 4px;
 }
 
 .skills-tags span {
-  background-color: #f1f5f9; /* Світлий фон для кожного тегу */
+  background-color: #f1f5f9; /* Light background for each tag */
   color: #1e293b;
   font-size: 0.85rem;
   padding: 6px 12px;
   border-radius: 8px;
   font-weight: 500;
-  border: 1px solid #e2e8f0; /* Легка рамка для розділення */
+  border: 1px solid #e2e8f0; /* Light border for separation */
 }
 
 .about-open {
@@ -405,6 +405,7 @@ body {
   .hero-text-block h2, 
   .hero-text-block h3 {
     font-size: clamp(1.1rem, 4.5vw, 1.8rem);
+    color: #0f172a;
   }
 
   .line {
