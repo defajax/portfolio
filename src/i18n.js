@@ -30,13 +30,13 @@ const resources = {
       about: {
         title: "About Me",
         education: "Education: National University 'Odesa Polytechnic'",
-        background: "I have a higher technological education and a strong foundation in analytics and information structuring. My main focus is currently Front-end development. Ready to learn new things and expand my stack :)",
+        background: "I hold a degree in technology, paired with a strong foundation in analytics and information structuring. My main focus is currently Front-end development. Ready to learn new things and expand my stack :)",
         stackTitle: "Tech Stack:",
         skillsTitle: "Soft & Hard Skills:",
         skillsText: "Advanced data analysis, information structuring (registries, databases), routine automation, attention to detail.",
         hobbiesTitle: "Hobbies:",
-        hobbiesText: "A strong passion for OSINT for the soul (legal stalking and investigations...), 2D illustrations, and graphic design.",
-        openTo: "Open to job offers for Junior Front-end Developer and OSINT Analyst positions."
+        hobbiesText: "A strong passion for OSINT for the soul, 2D illustrations, and graphic design.",
+        openTo: "Open to job offers for Junior Front-end Developer position."
       }
     }
   },
@@ -73,8 +73,8 @@ const resources = {
         skillsTitle: "Soft & Hard скіли:",
         skillsText: "Просунутий аналіз даних, структуризація інформації (реєстри, бази даних), автоматизація рутини, увага до деталей.",
         hobbiesTitle: "Хобі:",
-        hobbiesText: "Маю нестримну пристрасть до OSINT для душі (легальний сталкінг і розслідування...), 2D-ілюстрації та графічного дизайну.",
-        openTo: "Відкрита до пропозицій на позицію Junior Front-end Developer та OSINT-аналітика."
+        hobbiesText: "Маю нестримну пристрасть до OSINT для душі, 2D-ілюстрації та графічного дизайну.",
+        openTo: "Відкрита до пропозицій на позицію Junior Front-end Developer."
       }
     }
   }
