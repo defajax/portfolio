@@ -15,7 +15,7 @@ const resources = {
         design: "I design and",
         develop: "develop",
         apps: "apps,",
-        interactive: "interactive web sites.",
+        interactive: "interactive web sites",
         subtitle: "I also build unique tools and modern UI interfaces",
         learn: "Learn more",
         name:"Marharyta"
