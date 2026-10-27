@@ -16,7 +16,7 @@ const resources = {
         develop: "develop",
         apps: "apps,",
         interactive: "interactive web sites.",
-        subtitle: "I also build unique tools, including genetic web calculators and modern UI interfaces.",
+        subtitle: "I also build unique tools and modern UI interfaces",
         learn: "Learn more",
         name:"Marharyta"
       },
@@ -53,8 +53,8 @@ const resources = {
         design: "Я проєктую та",
         develop: "розробляю",
         apps: "додатки,",
-        interactive: "інтерактивні веб-сайти.",
-        subtitle: "Я також створюю унікальні інструменти, включаючи генетичні веб-калькулятори та сучасні UI інтерфейси.",
+        interactive: "інтерактивні веб-сайти",
+        subtitle: "Я також створюю унікальні інструменти та сучасні UI інтерфейси.",
         learn: "Дізнатися більше",
         name:"Маргарита"
       },
